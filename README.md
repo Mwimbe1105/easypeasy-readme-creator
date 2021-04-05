@@ -1,2 +1,3 @@
-# easypeasy-readme-creator
-a readme generator using nodejs, inquirer, json
+# Professional README Generator Starter Code
+
+[How to create a Professional README](./readme-guide.md)
