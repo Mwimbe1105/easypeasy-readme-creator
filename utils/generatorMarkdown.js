@@ -1,4 +1,4 @@
-function generateMarkdown(data, userInfo) {
+function generatorMarkdown( data,userInfo) {
 
   // Generate Table of Contents conditionally based on data
   let draftToC = `## Table of Contents`;
@@ -36,7 +36,7 @@ function generateMarkdown(data, userInfo) {
   
 
   // Optional Installation section
-  if (data.installation !== '') {
+  if (data.Installation !== '') {
   
     userInfo +=
   `
@@ -45,7 +45,7 @@ function generateMarkdown(data, userInfo) {
   
   *Steps required to install project and how to get the development environment running:*
   
-  ${data.installation}`
+  ${data.Installation}`
   };
   
 
@@ -65,19 +65,19 @@ function generateMarkdown(data, userInfo) {
   
   
   // Optional Contributing section
-  if (data.contributing !== '') {
+  if (data.Contributor !== '') {
   `
   
   ## Contributing
   
   *If you would like to contribute it, you can follow these guidelines for how to do so.*
   
-  ${data.contributing}`
+  ${data.Contributor}`
   };
   
 
   // Optional Tests section
-  if (data.tests !== '') {
+  if (data.Test !== '') {
   
   userInfo +=
   `
@@ -86,7 +86,7 @@ function generateMarkdown(data, userInfo) {
   
   *Tests for application and how to run them:*
   
-  ${data.tests}`
+  ${data.Test}`
   };
 
 
@@ -96,8 +96,9 @@ function generateMarkdown(data, userInfo) {
   
   ## License
   
-  ${data.license}
+  ${data.License}
   `;
-return generateMarkdown}
+return generatorMarkdown;
+}
 
-module.exports = generateMarkdown;
+module.exports = generatorMarkdown;
